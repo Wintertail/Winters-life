@@ -1,5 +1,5 @@
 
-const arr = ['/headerpic/0.png', '/headerpic/1.png', '/headerpic/2.png','/headerpic/0R.png', '/headerpic/1R.png','/headerpic/2R.png'];
+const arr = ['./headerpic/0.png', './headerpic/1.png', './headerpic/2.png','./headerpic/0R.png', './headerpic/1R.png','./headerpic/2R.png'];
 let i =0;
 let r =0;
 let m = 0;
@@ -16,8 +16,8 @@ $(document).ready(function(){
                     }
                 }
                 else{
-                    $("#left-head").attr('src', '/headerpic/'+i+'.png');
-                    $("#right-head").attr('src', '/headerpic/'+r+'R.png');
+                    $("#left-head").attr('src', './headerpic/'+i+'.png');
+                    $("#right-head").attr('src', './headerpic/'+r+'R.png');
 
                     console.log('/headerpic/'+i+'.png');
                     i++;
