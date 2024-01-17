@@ -1,8 +1,11 @@
 html{
     height:100%;
     width:100%;
-    background-color: rgb(248, 234, 222);
-    margin:0;
+    background: rgb(235,218,204);
+    background: -moz-radial-gradient(circle, rgba(235,218,204,1) 28%, rgba(251,251,251,1) 100%, rgba(235,218,204,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(235,218,204,1) 28%, rgba(251,251,251,1) 100%, rgb(207, 187, 170) 100%);
+    background: radial-gradient(circle, rgba(235,218,204,1) 28%, rgba(251,251,251,1) 100%, rgba(235,218,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ebdacc",endColorstr="#ebdacc",GradientType=1);    margin:0;
     font-family: 'Raleway', sans-serif;
     font-family: 'Red Hat Display', sans-serif;
     scroll-behavior: smooth;
@@ -89,12 +92,13 @@ li{
 .head img{
     overflow: hidden;
     width: 97%;
-    border: 5% grey solid;
+    border: 5px rgba(107,77,53,1)  solid;
     transition: ease-in-out;
     margin-bottom:3%;
     margin-top:4%;
     margin-left:1%;
     margin-right:3%;
+    
     
 }
 
@@ -118,12 +122,14 @@ li{
     margin-right:5%;
     margin-bottom:5%;
     background-color: rgba(250, 160, 82, 0.2);
+    
 }
 .blog img{
     object-fit: contain;
     width:34%;
     float: left;
     padding:1%;
+    
 }
 .prev-title{
     font-size: 3vw;
@@ -137,6 +143,14 @@ li{
     font-size: 2vw;
 }
 
+.preview1{
+    box-shadow: 9px 9px 9px black;
+}
+.preview2{
+    box-shadow: 8px 8px 8px black;
+}.preview3{
+    box-shadow: 10px 10px 10px black;
+}
 
 
 
@@ -153,6 +167,11 @@ li{
         flex:wrap;
         justify-content: center;
         align-content: center;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+
     }
     .head{
         margin:0;
