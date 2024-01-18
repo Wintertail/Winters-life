@@ -54,3 +54,23 @@ function dropMenu() {
       }
     }
   }
+
+
+//toggles a larger image when clicked
+/*$('.art-content-container img').each(function(index){
+    if($(this).attr('onclick')!=null){
+        if($(this).attr('onclick').indexOf("runThis()") == -1){
+            $(this).click(function () {
+                $(this).attr('onclick');
+                var src = $(this).attr("src");
+                ShowLargeImage(src);
+            });
+        }
+    }
+    else {                    
+        $(this).click(function () {                        
+            var src = $(this).attr("src");
+            $('body').append('<div class="art-img-temp"></div><div class="art-temp"><img src="' + src.replace("small","large") + '" /></div>');
+        });
+    }
+})*/
