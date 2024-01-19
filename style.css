@@ -408,6 +408,7 @@ grid-row-end: end;
             display:grid;
             min-width: fit-content;
             grid-template-rows:2fr 1fr 1fr ;
+            grid-column: 1fr;
         }
         
         
@@ -441,7 +442,8 @@ grid-row-end: end;
             font-size:2vh;
         }
         .art-description{
-
+            grid-row-start: 2;
+            grid-row
         }
         
         
