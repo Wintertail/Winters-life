@@ -265,9 +265,6 @@ grid-row-end: end;
 
 /* MOBILE STYLING ONLY PAST HERE*/
 @media only screen and (max-width:980px){
-    body{
-        width:100vw;
-    }
     header{
         height:96px;
         margin:0;
@@ -343,6 +340,7 @@ grid-row-end: end;
     .head img{
         overflow: hidden;
         width: 100%;
+        height:auto;
         border: 5% grey solid;
         transition: ease-in-out;
         margin-bottom:3%;
@@ -376,7 +374,7 @@ grid-row-end: end;
     }
     .blog img{
     object-fit: contain;
-    width:34%;
+    width:98%;
     float: left;
     padding:1%;
     }
@@ -409,7 +407,7 @@ grid-row-end: end;
         font-size: 7vh;
     }
     .page-title p{
-        font-size: 2.5vh;
+        font-size: 2vh;
     }
         .art-content-container{
         display: flex;
@@ -432,7 +430,7 @@ grid-row-end: end;
             border: 6px rgb(68, 47, 29) solid;
         grid-row-start: start;
         grid-row-end:1;
-        height: 40vh;
+        height:40vh;
         width:auto;
         z-index: 1;
         transition:transform 0.25s ease;
