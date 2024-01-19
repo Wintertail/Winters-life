@@ -366,11 +366,10 @@ grid-row-end: end;
         margin-bottom:5%;
     }
     .blog img{
-        
-        height: auto;
-        width:90%;
-        padding:2%;
-        margin:0%;
+        object-fit: contain;
+        width:34%;
+        float: left;
+        padding:1%;
     }
     .prev-date{
         grid-row-start:2;
@@ -405,10 +404,12 @@ grid-row-end: end;
         
         }
         .art-blog{
-            display:grid;
-            min-width: fit-content;
-            grid-template-rows:2fr 1fr 1fr ;
-            grid-column: 1fr;
+            display: flex;
+            flex-direction: row;
+            margin-left: 5%;
+            margin-right:5%;
+            margin-bottom:5%;
+            background-color: rgba(250, 160, 82, 0.2);
         }
         
         
@@ -440,10 +441,13 @@ grid-row-end: end;
             grid-row-start:1;
             grid-row-end:2;
             font-size:2vh;
+            width:100%;
+
         }
         .art-description{
             grid-row-start: 2;
-            grid-row-end: 3;
+            grid-row-end: end;
+            width:100%;
         }
         
         
