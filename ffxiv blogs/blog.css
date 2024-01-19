@@ -1,0 +1,232 @@
+html{
+    height:100%;
+    width:100%;
+    background: rgb(235,218,204);
+    background: -moz-radial-gradient(circle, rgba(235,218,204,1) 28%, rgba(251,251,251,1) 100%, rgba(235,218,204,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(235,218,204,1) 28%, rgba(251,251,251,1) 100%, rgb(207, 187, 170) 100%);
+    background: radial-gradient(circle, rgba(235,218,204,1) 28%, rgba(251,251,251,1) 100%, rgba(235,218,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ebdacc",endColorstr="#ebdacc",GradientType=1);    margin:0;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+
+body{
+    min-height: 100vh;
+    padding-right:0;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+}
+a:link{
+    color:black;
+    text-decoration: none;
+}
+a:visited{
+    color:black;
+    text-decoration: none;
+}
+
+
+header{
+    
+    display: grid;
+    grid-template-columns:  1fr 5fr  1fr;
+    background-color:  rgba(206, 156, 113);
+}
+
+footer{
+    margin:0;
+    padding:0;
+    height:50px;
+    width:100%;
+    background-color: rgb(206, 156, 113);
+}
+
+.footer-notfilled{
+    margin:0;
+    padding:0;
+    max-height:110px;
+    width:100%;
+    background-color: rgb(206, 156, 113);
+    position:absolute;
+    bottom:0;
+}
+
+ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-decoration: none;
+    list-style-type: none;
+}
+li{
+    text-decoration: none;
+    
+}
+.headbar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 20px;
+    border-left: black solid 1px;
+    border-right: black solid 1px;
+}
+
+.dropdown{
+    display:none;
+}
+.dropbtn-menu {
+    cursor: pointer;
+    width:100%;
+    height:auto;
+}
+
+  
+
+.dropdown-menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(143, 102, 68);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 30px;
+}
+.dropdown-menu-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.dropdown-menu-content a:hover  {background-color: rgb(247, 205, 168); color: rgb(0, 0, 0)}
+.show {display:block;}
+
+
+.social{
+    display:flex;
+    justify-content: space-around;
+    align-self: center;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding:15%;
+    background-color: rgb(252, 239, 228);
+    height: 100%;
+}
+.blog-container{
+    display :flex;
+    flex-direction: column;
+    min-height: fit-content;
+    height:100%;
+    justify-content: left;
+    align-content: left;
+    text-align:justify;
+    background-color: rgb(255, 253, 252);
+    padding:10%;
+    overflow:auto;
+}
+.blog-title{
+    font-size:60px;
+    font-weight: bold;
+}
+.author{
+    font-size: 15px;
+    font-weight:100;
+}
+.date{
+    font-size:25px;
+    font-weight: 400;
+}
+.blog-content {
+    height:100%;
+    min-height: fit-content;
+    width:100%;
+}
+.blog-content p{
+    font-size: 30px;
+    font-weight: 300;
+    word-spacing: normal;
+    
+}
+.img-left{
+    width:25vw;
+    float:left;
+    padding:3%;
+    padding-left: 0%;
+    padding-bottom: 0%;
+}
+.img-right{
+    width:25vw;
+    float:right;
+    padding:3%;
+    padding-right: 0%;
+    padding-bottom:1%;
+}
+
+
+@media only screen and (max-width:980px){
+    header{
+        height:96px;
+        margin:0;
+        
+    }
+
+    .container{
+
+    }
+    .dropbtn {
+        background-color: rgb(117, 81, 50);
+        color: white;
+        padding: 16px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        height:150%;
+        width:150%;
+        margin:0;
+    }
+    .dropbtn:hover, .dropbtn:focus{
+        background-color: rgb(68, 47, 29);
+      }
+      
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+        height: 4rem;
+        margin:0;
+    }
+    .dropdown-content {
+        display: none;
+        margin:0;
+        position: absolute;
+        background-color: rgb(143, 102, 68);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        
+        font-size: 50px;
+    }
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+    .dropdown-content a:hover  {background-color: rgb(247, 205, 168); color: rgb(0, 0, 0)}
+    .show {display:block;}
+
+
+    .headbar{
+        display:none;
+    }
+    .social{
+        display:none;
+    }
+
+    
+}
