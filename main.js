@@ -54,7 +54,28 @@ function dropMenu() {
       }
     }
   }
+function navClicked(){
+    console.log("FADING PAGE AWAY");
+    $(".container").fadeOut("1000");
+    $(".fade-container").fadeOut("6000");
+}
 
+function ffxivBlog(){
+    $("#ffxiv-Pictures").fadeOut("6000").css("display","none");
+    $("#ffxiv-Thalia").fadeOut("6000").css("display","none");
+    $("#ffxiv-blog-content").fadeIn("6000").css("display", "block");
+}
+
+function ffxivPictures(){
+    $("#ffxiv-blog-content").fadeOut("6000").css("display","none");
+    $("#ffxiv-Thalia").fadeOut("6000").css("display","none");
+    $("#ffxiv-Pictures").fadeIn("6000").css("display", "block");
+}
+function ffxivThalia(){
+    $("#ffxiv-blog-content").fadeOut("6000").css("display","none");
+    $("#ffxiv-Pictures").fadeOut("6000").css("display","none");
+    $("#ffxiv-Thalia").fadeIn("6000").css("display", "block"); 
+}
 
 //toggles a larger image when clicked
 /*$('.art-content-container img').each(function(index){

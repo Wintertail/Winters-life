@@ -51,12 +51,67 @@
         <p>A space dedicated to Winter's life in Eorzea</p>
     </div>
     <div class = "ffxiv-nav">
-        <li>ffxiv blogs</li>
-        <li>ffxiv </li>
+        <button onclick="ffxivBlog()"><li id="ffxiv-blog">ffxiv blogs</li></button>
+        <button onclick="ffxivPictures()"><li id="ffxiv-pictures">ffxiv pictures</li></button>
+        <button onclick="ffxivThalia()"><li id="Thalia">Thalia Wintertail</li></button>
     </div>
-    <div class="footer-notfilled ">
+    
+
+    <div class="ffxiv-content-container">
+
+        <!-- A bunch of short snip bits of FFXIV blog previews where I say whatever I think about something, clicking on them brings you to the full page blog-->
+        <div id="ffxiv-blog-content">
+            <div class="blog preview1">
+                <img class="prev-img" src="blog1prev.png">
+                <div class="prev-info">
+                    <p class="prev-date">Jan 00, 0000</p>
+                    <p class="prev-title">example title</p>
+                </div>
+                <p class="prev-summary">example paragraph summary example
+                    paragraph summary example paragraph summary example
+                    paragraph summaryexample paragraph summary</p>
+            </div>
+            <div class="blog preview1">
+                <img class="prev-img" src="blog1prev.png">
+                <div class="prev-info">
+                    <p class="prev-date">Jan 00, 0000</p>
+                    <p class="prev-title">example title</p>
+                </div>
+                <p class="prev-summary">example paragraph summary example
+                    paragraph summary example paragraph summary example
+                    paragraph summaryexample paragraph summary</p>
+            </div>
+            <div class="blog preview1">
+            <img class="prev-img" src="blog1prev.png">
+            <div class="prev-info">
+                <p class="prev-date">Jan 00, 0000</p>
+                <p class="prev-title">example title</p>
+            </div>
+            <p class="prev-summary">example paragraph summary example
+                paragraph summary example paragraph summary example
+                paragraph summaryexample paragraph summary</p>
+         </div>
+        </div>
+        <!-- A collage of a bunch of ffxiv photos taken-->
+        <div id="ffxiv-Pictures">
+            <img src="./ffxiv pictures/ffxiv_02182023_214646_822.png">
+            <img src="./ffxiv pictures/ffxiv_02212023_140028_225.png">
+            <img src="./ffxiv pictures/ffxiv_03142023_011604_138.png">
+            <img src="./ffxiv pictures/ffxiv_03162023_173103_238.png">
+            <img src="./ffxiv pictures/ffxiv_08152023_224818_161.png">
+            <img src="./ffxiv pictures/ffxiv_10032023_032327_060.png">
+        </div>
+        <!-- A bunch of random stuff about Thalia, maybe some character lore and etc. -->
+        <div class="ffxiv-Thalia">
+
+        </div>
+
+    </div>
+
+<!-- Generic footer legal + contacts-->
+    <footer >
         <p>footer</p>
-    </div>
+    </footer>
 
 </div>
 
