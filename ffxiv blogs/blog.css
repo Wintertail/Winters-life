@@ -177,8 +177,63 @@ li{
     }
 
     .container{
-
+        display: flex;
+        flex-direction: column;
+        padding:2%;
+        background-color: rgb(252, 239, 228);
+        height: 100%;
     }
+
+    .blog-container{
+        display :flex;
+        flex-direction: column;
+        min-height: fit-content;
+        height:100%;
+        justify-content: left;
+        align-content: left;
+        text-align:justify;
+        background-color: rgb(255, 253, 252);
+        padding:1%;
+        overflow:auto;
+    }
+    .blog-title{
+        font-size:60px;
+        font-weight: bold;
+    }
+    .author{
+        font-size: 15px;
+        font-weight:100;
+    }
+    .date{
+        font-size:25px;
+        font-weight: 400;
+    }
+    .blog-content {
+        height:100%;
+        min-height: fit-content;
+        width:100%;
+    }
+    .blog-content p{
+        font-size: 20px;
+        font-weight: 300;
+        word-spacing: normal;
+        
+    }
+    .img-left{
+        width:50vw;
+        float:left;
+        padding:3%;
+        padding-left: 0%;
+        padding-bottom: 0%;
+    }
+    .img-right{
+        width:50vw;
+        float:right;
+        padding:3%;
+        padding-right: 0%;
+        padding-bottom:1%;
+    }
+    
     .dropbtn {
         background-color: rgb(117, 81, 50);
         color: white;
@@ -209,7 +264,7 @@ li{
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         
-        font-size: 50px;
+        font-size: 40px;
     }
     .dropdown-content a {
         color: white;
