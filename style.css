@@ -212,6 +212,14 @@ justify-items: center;
 text-align: center;
 padding-left:15%;
 padding-right:15%;
+
+}
+.page-title h1{
+    font-size: 4vw;
+
+}
+.page-title p{
+    font-size:2vw;
 }
 .art-content-container{
     height: 100%;
