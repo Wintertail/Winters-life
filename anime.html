@@ -18,9 +18,9 @@
     <header>
             <p class="logo"></p>
             <div class="dropdown">
-                <button onclick="dropNav()" class="dropbtn"><i class="bi bi-list"></i>
+                <button onclick="dropMenu()" class="dropbtn"><i class="bi bi-list"></i>
                 </button>
-                <ul id="NavDrop" class="dropdown-content">
+                <ul id="myDropdown" class="dropdown-content">
                     <a class="headbar" href="./index.html"><li>HOME</li></a>
                     <a class="headbar" href="./ffxiv.html"><li>FFXIV</li></a>
                     <a class="headbar" href="./art.html"><li>Art</li></a>
@@ -31,7 +31,7 @@
               </div>
 
             </div>
-            <ul>
+            <ul id="test">
                 <a class="headbar" href="./index.html"><li>HOME</li></a>
                 <a class="headbar" href="./ffxiv.html"><li>FFXIV</li></a>
                 <a class="headbar" href="./art.html"><li>Art</li></a>
@@ -49,27 +49,61 @@
 
     <div class="anime-content-container">
         <div class="anime-header">
-
+            <h1>Anime</h1>
+            <p>Where my trash taste gets exposed to the world</p>
         </div>
         <div class="anime-nav">
+            <button onclick="animeblog()"><li id="animeblog">Anime reviews/blogs</li></button>
+            <button onclick="anime3x3()"><li id="anime3x3">Anime 3x3</li></button>
+        </div>
+
+        <div id="animeblog-content">
+            <a href="./ffxiv blogs/blogTemp.html"><div class="blog preview1">
+                <img class="prev-img" src="blog1prev.png">
+                <div class="prev-info">
+                    <p class="prev-date">Jan 00, 0000</p>
+                    <p class="prev-title">example title</p>
+                </div>
+                <p class="prev-summary">example paragraph summary example
+                    paragraph summary example paragraph summary example
+                    paragraph summaryexample paragraph summary</p>
+            </div></a>
+            
+            <div class="blog preview1">
+                <img class="prev-img" src="blog1prev.png">
+                <div class="prev-info">
+                    <p class="prev-date">Jan 00, 0000</p>
+                    <p class="prev-title">example title</p>
+                </div>
+                <p class="prev-summary">example paragraph summary example
+                    paragraph summary example paragraph summary example
+                    paragraph summaryexample paragraph summary</p>
+            </div>
+            <div class="blog preview1">
+            <img class="prev-img" src="blog1prev.png">
+            <div class="prev-info">
+                <p class="prev-date">Jan 00, 0000</p>
+                <p class="prev-title">example title</p>
+            </div>
+            <p class="prev-summary">example paragraph summary example
+                paragraph summary example paragraph summary example
+                paragraph summaryexample paragraph summary</p>
+         </div>
+        </div>
+        <div id="anime3x3-content">
+            <div class="anime-container">
+                <img src="./anime/3x3.png">
+                <p></p>
+            </div>
 
         </div>
-        <div class="anime 3x3">
-            <img src="#">
-            <p></p>
-        </div>
-        <div class="anime-reviews">
 
-        </div>
-        <div class="myAni">
-            <p>MyAnimeList</p>
-        </div>
     </div>
 
     
-    <div class="footer-notfilled ">
+    <footer>
         <p>footer</p>
-    </div>
+    </footer>
 
 </div>
 

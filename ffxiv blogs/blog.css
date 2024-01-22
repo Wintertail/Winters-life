@@ -1,3 +1,7 @@
+:root{
+    --main-btnActive:  rgb(82, 56, 34);
+    --main-btnHover:  rgb(158, 109, 66);
+}
 html{
     height:100%;
     width:100%;
@@ -74,6 +78,15 @@ li{
     border-left: black solid 1px;
     border-right: black solid 1px;
 }
+#test a:hover{
+    background-color: var(--main-btnHover);
+    height:120%;
+
+}
+#test a:active{
+    background-color: var(--main-btnActive);
+    height:120%;
+}
 
 .dropdown{
     display:none;
@@ -114,7 +127,7 @@ li{
 .container{
     display: flex;
     flex-direction: column;
-    padding:15%;
+    padding:7%;
     background-color: rgb(252, 239, 228);
     height: 100%;
 }
@@ -127,7 +140,7 @@ li{
     align-content: left;
     text-align:justify;
     background-color: rgb(255, 253, 252);
-    padding:10%;
+    padding:8%;
     overflow:auto;
 }
 .blog-title{

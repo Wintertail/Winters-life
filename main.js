@@ -101,3 +101,14 @@ function ffxivThalia(){
         });
     }
 })*/
+
+function animeblog(){
+    $("#anime3x3-content").fadeOut("6000").css("display","none");
+    $("#animeblog-content").fadeIn("6000").css("display", "block"); 
+    $("#animeblog-content").get(0).scrollIntoView({behavior: 'smooth'});
+}
+function anime3x3(){
+    $("#animeblog-content").fadeOut("6000").css("display","none");
+    $("#anime3x3-content").fadeIn("6000").css("display", "block"); 
+    $("#anime3x3-content").get(0).scrollIntoView({behavior: 'smooth'});
+}
