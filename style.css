@@ -2,6 +2,18 @@
     --main-btnActive:  rgb(82, 56, 34);
     --main-btnHover:  rgb(158, 109, 66);
     --main-border: rgb(68, 47, 29);
+    --main-blogBack:  rgba(250, 160, 82, 0.2);
+    --main-blogShadow:rgb(143, 102, 68);
+
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background: var(--main-border);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-btnHover);
 }
 html{
     height:100%;
@@ -46,7 +58,6 @@ header{
 footer{
     margin:0;
     padding:0;
-    height:50px;
     width:100%;
     background-color: rgb(206, 156, 113);
 }
@@ -71,6 +82,8 @@ li{
     text-decoration: none;
     
 }
+
+
 .headbar {
     display: flex;
     justify-content: center;
@@ -117,11 +130,32 @@ li{
 .dropdown-menu-content a:hover  {background-color:var(--main-btnHover); color: rgb(0, 0, 0)}
 .show {display:block;}
 
-
+.srollbtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--main-border);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 80%;
+}
+.srollbtn:hover{
+    background-color: var(--main-blogShadow);
+}
 .social{
     display:flex;
-    justify-content: space-around;
-    align-self: center;
+    justify-content: right;
+    margin-left:10%;
+    margin-right:10%;
+    gap:10%;
+    align-self: right;
 
 }
 
@@ -194,6 +228,11 @@ li{
 
     background-color:var(--main-btnHover);
 }
+.blog-prev-content{
+    display:flex;
+    flex-direction: column;
+
+}
 .prev-title{
     font-size: 3vw;
     font:bold;
@@ -265,7 +304,7 @@ grid-row-end: 1;
 height:40vh;
 width:auto;
 z-index: 1;
-transition:transform 0.25s ease;
+box-shadow: 8px 8px 8px rgba(19, 13, 8, 0.4);
 }
 /*.art-img:hover {
     z-index: 2;
@@ -350,7 +389,7 @@ padding-right:15%;
     width:auto;
     border: 6px rgb(68, 47, 29) solid;
     box-shadow: 10px 10px 10px rgba(39, 25, 14, 0.5);
-    margin:2vw;
+    margin:4vw;
 }
 
 .ffxiv-Thalia{
@@ -418,6 +457,14 @@ padding-right:15%;
     height: auto;
     width: 50vw;
 }
+.anime-container p{
+    margin: 2%;
+    background-color: var(--main-blogBack);
+    width:80vw;
+    box-shadow: 5px 5px 5px var(--main-blogShadow);
+    font-size: 20px;
+    font-size-adjust: 10px;
+}
 
 /*desktop only no mobile styling*/
 @media only screen and (min-width:1000px){
@@ -427,6 +474,9 @@ padding-right:15%;
 
 /* MOBILE STYLING ONLY PAST HERE*/
 @media only screen and (max-width:980px){
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
     header{
         height:96px;
         margin:0;
@@ -668,8 +718,22 @@ padding-right:15%;
     background-color: rgb(255, 194, 141);
     box-shadow: 10px 10px 10px rgb(117, 81, 50, 0.2);
     }
-    
+/* ANIME MOBILE STYLING*/
+.anime-header{
+    height:30%;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 2%;
+    margin-bottom:15%;
+    margin-top:15%;
 
+    justify-items: center;
+    text-align: center;
+    padding-left:15%;
+    padding-right:15%;
+}
+.anime-header h1{    font-size:50px;    }
+.anime-header p{    font-size: 30px;}
 
 
 }

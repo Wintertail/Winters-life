@@ -3,6 +3,10 @@ const arr = ['./headerpic/0.png', './headerpic/1.png', './headerpic/2.png','./he
 let i =0;
 let r =0;
 let m = 0;
+let scrollbutton = document.getElementById("scrollbtn");
+
+
+window.onscroll = function() {scrollFunction()};
 //cycling through pictures on header 
 $(document).ready(function(){
             setInterval(function(){
@@ -111,4 +115,15 @@ function anime3x3(){
     $("#animeblog-content").fadeOut("6000").css("display","none");
     $("#anime3x3-content").fadeIn("6000").css("display", "block"); 
     $("#anime3x3-content").get(0).scrollIntoView({behavior: 'smooth'});
+}
+function scrollFunction(){
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollbutton.style.display = "block";
+      } else {
+        scrollbutton.style.display = "none";
+      }
+}
+
+function ToTop(){
+    $("header").get(0).scrollIntoView({behavior: 'smooth'});
 }

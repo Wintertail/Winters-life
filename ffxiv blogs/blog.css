@@ -45,7 +45,8 @@ header{
 footer{
     margin:0;
     padding:0;
-    height:50px;
+    min-height: fit-content;
+    height: auto;
     width:100%;
     background-color: rgb(206, 156, 113);
 }
@@ -119,6 +120,7 @@ li{
 
 
 .social{
+    
     display:flex;
     justify-content: space-around;
     align-self: center;
