@@ -279,7 +279,6 @@ padding-right:15%;
 }
 .art-content-container{
     height: 100%;
-    width:auto;
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
@@ -401,7 +400,6 @@ padding-right:15%;
 /*Anime.html styling*/
 .anime-header{
     height:30vw;
-    width: auto;
     display:grid;
     grid-template-rows: 1fr 1fr;
     row-gap: 2%;
@@ -609,6 +607,8 @@ padding-right:15%;
     
     /* MOBILE ART PAGE STYLING ONLY*/
     .page-title{
+        height:50vh;
+        width:auto;
         min-height:35vh;
         row-gap: 2%;
         margin:0%;
@@ -617,7 +617,6 @@ padding-right:15%;
         text-align: center;
         padding-left:15%;
         padding-right:15%;
-        width:100%;
         }
     .page-title h1{
         font-size: 7vh;
