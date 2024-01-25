@@ -400,6 +400,7 @@ padding-right:15%;
 /*Anime.html styling*/
 .anime-header{
     height:30vw;
+    width: auto;
     display:grid;
     grid-template-rows: 1fr 1fr;
     row-gap: 2%;
