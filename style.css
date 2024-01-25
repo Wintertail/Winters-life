@@ -615,6 +615,7 @@ padding-right:15%;
         text-align: center;
         padding-left:15%;
         padding-right:15%;
+        width:100%;
         }
     .page-title h1{
         font-size: 7vh;
@@ -696,7 +697,7 @@ padding-right:15%;
         row-gap: 2%;
         margin-bottom:15%;
         margin-top:15%;
-
+        width:100%;
         justify-items: center;
         text-align: center;
         padding-left:15%;
