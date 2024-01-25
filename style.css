@@ -702,7 +702,6 @@ padding-right:15%;
         text-align: center;
         padding-left:15%;
         padding-right:15%;
-        width:100%;
     }
     .ffxiv-page-title h1{
         font-size: 50px;
@@ -710,6 +709,14 @@ padding-right:15%;
     }
     .ffxiv-page-title p{
         font-size:30px;
+    }
+    .ffxiv-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: .5vw;
+        margin:2%;
+        column-gap: 1vw;
+        min-height: 30px;
     }
     .ffxiv-nav button{
         text-align: center;
@@ -719,6 +726,7 @@ padding-right:15%;
     font-size: 25px;
     background-color: rgb(255, 194, 141);
     box-shadow: 10px 10px 10px rgb(117, 81, 50, 0.2);
+    overflow: none;
     }
 /* ANIME MOBILE STYLING*/
 .anime-header{
