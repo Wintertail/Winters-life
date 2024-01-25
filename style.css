@@ -691,13 +691,14 @@ padding-right:15%;
     
     /*styling for ffxiv mobile */
     .ffxiv-page-title{
-        height:30%;
+        
+        height:30vh;
+        width:auto;
         display:grid;
         grid-template-rows: 1fr 1fr;
         row-gap: 2%;
         margin-bottom:15%;
         margin-top:15%;
-        width:100%;
         justify-items: center;
         text-align: center;
         padding-left:15%;
