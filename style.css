@@ -452,7 +452,7 @@ padding-right:15%;
     align-items: center;
 }
 .anime-container img{
-    border: var(--main-border) 20px solid;
+    border: var(--main-border) 1.5vw solid;
     box-shadow: 20px 20px 20px rgba(19, 13, 8, 0.4);
     height: auto;
     width: 50vw;
