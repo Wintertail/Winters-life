@@ -279,6 +279,7 @@ padding-right:15%;
 }
 .art-content-container{
     height: 100%;
+    width:auto;
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
